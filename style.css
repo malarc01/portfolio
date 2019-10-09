@@ -412,7 +412,7 @@ input[type='submit']:hover {
 	right: 5rem;
 	border-radius: 100%;
 	display: flex;
-	animation: pulse;
+	animation: pulse 2s infinite;
 }
 
 .up i {
