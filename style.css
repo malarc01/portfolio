@@ -44,7 +44,7 @@ img {
 }
 .section-heading h1 {
 	font-size: 3.5rem;
-	color: rgba(255, 255, 255, .3);
+	color: rgba(255, 255, 255, .5);
 	text-transform: uppercase;
 	font-weight: 300;
 	position: relative;
@@ -58,6 +58,7 @@ img {
 	left: 50%;
 	transform: translateX(-50%);
 	background-color: rgba(255, 255, 255, .75);
+	/* background-color: red; */
 }
 .section-heading h1::before {
 	width: 10rem;
@@ -78,10 +79,13 @@ img {
 	margin-right: 5rem;
 }
 header {
+	border: solid red 3px;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 }
 .top-nav {
+	border: solid lime 3px;
+
 	width: 100%;
 	height: 100vh;
 	position: fixed;
@@ -105,6 +109,8 @@ li {
 }
 
 .nav-link {
+	border: solid blue 3px;
+
 	font-family: 'The Historia Demo', sans-serif;
 	font-size: 5rem;
 	padding: 1rem;
@@ -140,6 +146,7 @@ li {
 }
 .bar {
 	background: linear-gradient(to right, #ffe838, #fd57bf);
+	background: linear-gradient(to right, red, purple);
 	width: 100%;
 	height: 4px;
 	border-radius: .8rem;
@@ -165,6 +172,7 @@ li {
 }
 
 .landing-text {
+	border: 5px solid palegreen;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -174,6 +182,8 @@ li {
 	z-index: 1;
 }
 .landing-text h1 {
+	border: 5px solid palevioletred;
+
 	font-size: 20rem;
 	font-family: 'The Historia Demo', sans-serif;
 	background: linear-gradient(to top, #ffe838, #fd57bf);
@@ -184,26 +194,30 @@ li {
 	user-select: none;
 }
 .landing-text h6 {
+	/* border: 5px solid brown; */
 	font-size: 2rem;
 	font-weight: 300;
 }
 
 .about .container {
+	border: 3px solid violet;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .about-heading {
+	border: 3px solid orangered;
 	text-align: center;
 	text-transform: uppercase;
-	line-height: 0;
+	/* line-height: 0; */
 	margin-bottom: 6rem;
 }
 
 .about-heading h1 {
+	border: 3px solid yellowgreen;
 	font-size: 10rem;
-	/* opacity: .3; */
+	/* opacity: .5; */
 	/* line-height: 15rem; */
 }
 .about-heading h6 {
@@ -220,12 +234,21 @@ li {
 
 .social-media {
 	margin-top: 5rem;
-	transition: color 650ms;
+}
+
+.social-media i {
+	font-size: 5rem;
+	transition: color 500ms;
+	/* transition: color 650ms; */
 }
 .fa-github-square:hover {
+	color: black;
+}
+.fa-linkedin:hover {
 	color: #4267b2;
+}
+.fa-twitter-square:hover {
 	color: #38a1f3;
-	color: #ea4c89;
 }
 
 .my-skills {
